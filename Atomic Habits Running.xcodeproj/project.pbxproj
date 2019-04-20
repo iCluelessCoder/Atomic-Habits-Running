@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA575B4B226B0D5F00889814 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA575B4A226B0D5F00889814 /* AppDelegate.swift */; };
+		EA575B4D226B0D5F00889814 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA575B4C226B0D5F00889814 /* ViewController.swift */; };
+		EA575B50226B0D5F00889814 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA575B4E226B0D5F00889814 /* Main.storyboard */; };
+		EA575B53226B0D5F00889814 /* Atomic_Habits_Running.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA575B51226B0D5F00889814 /* Atomic_Habits_Running.xcdatamodeld */; };
+		EA575B55226B0D6100889814 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA575B54226B0D6100889814 /* Assets.xcassets */; };
+		EA575B58226B0D6100889814 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA575B56226B0D6100889814 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EA575B47226B0D5F00889814 /* Atomic Habits Running.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Atomic Habits Running.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA575B4A226B0D5F00889814 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA575B4C226B0D5F00889814 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA575B4F226B0D5F00889814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA575B52226B0D5F00889814 /* Atomic_Habits_Running.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Atomic_Habits_Running.xcdatamodel; sourceTree = "<group>"; };
+		EA575B54226B0D6100889814 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA575B57226B0D6100889814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA575B59226B0D6100889814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA575B44226B0D5F00889814 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA575B3E226B0D5F00889814 = {
+			isa = PBXGroup;
+			children = (
+				EA575B49226B0D5F00889814 /* Atomic Habits Running */,
+				EA575B48226B0D5F00889814 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA575B48226B0D5F00889814 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA575B47226B0D5F00889814 /* Atomic Habits Running.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA575B49226B0D5F00889814 /* Atomic Habits Running */ = {
+			isa = PBXGroup;
+			children = (
+				EA575B4A226B0D5F00889814 /* AppDelegate.swift */,
+				EA575B4C226B0D5F00889814 /* ViewController.swift */,
+				EA575B4E226B0D5F00889814 /* Main.storyboard */,
+				EA575B54226B0D6100889814 /* Assets.xcassets */,
+				EA575B56226B0D6100889814 /* LaunchScreen.storyboard */,
+				EA575B59226B0D6100889814 /* Info.plist */,
+				EA575B51226B0D5F00889814 /* Atomic_Habits_Running.xcdatamodeld */,
+			);
+			path = "Atomic Habits Running";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA575B46226B0D5F00889814 /* Atomic Habits Running */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA575B5C226B0D6100889814 /* Build configuration list for PBXNativeTarget "Atomic Habits Running" */;
+			buildPhases = (
+				EA575B43226B0D5F00889814 /* Sources */,
+				EA575B44226B0D5F00889814 /* Frameworks */,
+				EA575B45226B0D5F00889814 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Atomic Habits Running";
+			productName = "Atomic Habits Running";
+			productReference = EA575B47226B0D5F00889814 /* Atomic Habits Running.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA575B3F226B0D5F00889814 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Marek Justus";
+				TargetAttributes = {
+					EA575B46226B0D5F00889814 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = EA575B42226B0D5F00889814 /* Build configuration list for PBXProject "Atomic Habits Running" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA575B3E226B0D5F00889814;
+			productRefGroup = EA575B48226B0D5F00889814 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA575B46226B0D5F00889814 /* Atomic Habits Running */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA575B45226B0D5F00889814 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA575B58226B0D6100889814 /* LaunchScreen.storyboard in Resources */,
+				EA575B55226B0D6100889814 /* Assets.xcassets in Resources */,
+				EA575B50226B0D5F00889814 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA575B43226B0D5F00889814 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA575B4D226B0D5F00889814 /* ViewController.swift in Sources */,
+				EA575B53226B0D5F00889814 /* Atomic_Habits_Running.xcdatamodeld in Sources */,
+				EA575B4B226B0D5F00889814 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EA575B4E226B0D5F00889814 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA575B4F226B0D5F00889814 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA575B56226B0D6100889814 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA575B57226B0D6100889814 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA575B5A226B0D6100889814 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA575B5B226B0D6100889814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA575B5D226B0D6100889814 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Q2RC6BSWM;
+				INFOPLIST_FILE = "Atomic Habits Running/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marekjustus.Atomic-Habits-Running";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA575B5E226B0D6100889814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Q2RC6BSWM;
+				INFOPLIST_FILE = "Atomic Habits Running/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marekjustus.Atomic-Habits-Running";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA575B42226B0D5F00889814 /* Build configuration list for PBXProject "Atomic Habits Running" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA575B5A226B0D6100889814 /* Debug */,
+				EA575B5B226B0D6100889814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA575B5C226B0D6100889814 /* Build configuration list for PBXNativeTarget "Atomic Habits Running" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA575B5D226B0D6100889814 /* Debug */,
+				EA575B5E226B0D6100889814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EA575B51226B0D5F00889814 /* Atomic_Habits_Running.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA575B52226B0D5F00889814 /* Atomic_Habits_Running.xcdatamodel */,
+			);
+			currentVersion = EA575B52226B0D5F00889814 /* Atomic_Habits_Running.xcdatamodel */;
+			path = Atomic_Habits_Running.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EA575B3F226B0D5F00889814 /* Project object */;
+}
