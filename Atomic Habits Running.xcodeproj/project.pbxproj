@@ -23,7 +23,7 @@
 		EA575B52226B0D5F00889814 /* Atomic_Habits_Running.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Atomic_Habits_Running.xcdatamodel; sourceTree = "<group>"; };
 		EA575B54226B0D6100889814 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA575B57226B0D6100889814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EA575B59226B0D6100889814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB702972271E21B005561D2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Atomic Habits Running/Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +41,10 @@
 			isa = PBXGroup;
 			children = (
 				EA575B49226B0D5F00889814 /* Atomic Habits Running */,
+				EAB702972271E21B005561D2 /* Info.plist */,
+				EA575B54226B0D6100889814 /* Assets.xcassets */,
+				EA575B51226B0D5F00889814 /* Atomic_Habits_Running.xcdatamodeld */,
+				EA575B56226B0D6100889814 /* LaunchScreen.storyboard */,
 				EA575B48226B0D5F00889814 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +60,43 @@
 		EA575B49226B0D5F00889814 /* Atomic Habits Running */ = {
 			isa = PBXGroup;
 			children = (
-				EA575B4A226B0D5F00889814 /* AppDelegate.swift */,
-				EA575B4C226B0D5F00889814 /* ViewController.swift */,
-				EA575B4E226B0D5F00889814 /* Main.storyboard */,
-				EA575B54226B0D6100889814 /* Assets.xcassets */,
-				EA575B56226B0D6100889814 /* LaunchScreen.storyboard */,
-				EA575B59226B0D6100889814 /* Info.plist */,
-				EA575B51226B0D5F00889814 /* Atomic_Habits_Running.xcdatamodeld */,
+				EAB7028E22708E82005561D2 /* Model */,
+				EAB7028B22708E07005561D2 /* View */,
+				EAB7028C22708E1A005561D2 /* Controller */,
+				EAB7028D22708E5A005561D2 /* Supporting Files */,
 			);
 			path = "Atomic Habits Running";
+			sourceTree = "<group>";
+		};
+		EAB7028B22708E07005561D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA575B4E226B0D5F00889814 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EAB7028C22708E1A005561D2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA575B4A226B0D5F00889814 /* AppDelegate.swift */,
+				EA575B4C226B0D5F00889814 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EAB7028D22708E5A005561D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAB7028E22708E82005561D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
