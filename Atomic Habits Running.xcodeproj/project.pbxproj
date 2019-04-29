@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9C208A506C075B4ECEFB0D3 /* Pods_Atomic_Habits_Running.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F68D9C91F2413FD6FAE90E3 /* Pods_Atomic_Habits_Running.framework */; };
+		EA16529E22774219004AC75E /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA16529C22774219004AC75E /* SWRevealViewController.m */; };
 		EA575B4B226B0D5F00889814 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA575B4A226B0D5F00889814 /* AppDelegate.swift */; };
 		EA575B4D226B0D5F00889814 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA575B4C226B0D5F00889814 /* ViewController.swift */; };
 		EA575B50226B0D5F00889814 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA575B4E226B0D5F00889814 /* Main.storyboard */; };
@@ -16,6 +18,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B538EE5414505D6E776E420 /* Pods-Atomic Habits Running.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atomic Habits Running.debug.xcconfig"; path = "Target Support Files/Pods-Atomic Habits Running/Pods-Atomic Habits Running.debug.xcconfig"; sourceTree = "<group>"; };
+		3F68D9C91F2413FD6FAE90E3 /* Pods_Atomic_Habits_Running.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Atomic_Habits_Running.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C78695FD0D6ACF6E5FBECF5F /* Pods-Atomic Habits Running.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atomic Habits Running.release.xcconfig"; path = "Target Support Files/Pods-Atomic Habits Running/Pods-Atomic Habits Running.release.xcconfig"; sourceTree = "<group>"; };
+		EA16529B22774218004AC75E /* Atomic Habits Running-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Atomic Habits Running-Bridging-Header.h"; sourceTree = "<group>"; };
+		EA16529C22774219004AC75E /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		EA16529D22774219004AC75E /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		EA575B47226B0D5F00889814 /* Atomic Habits Running.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Atomic Habits Running.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA575B4A226B0D5F00889814 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA575B4C226B0D5F00889814 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,12 +39,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9C208A506C075B4ECEFB0D3 /* Pods_Atomic_Habits_Running.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B0E70A85B39E1045D7DA5CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F68D9C91F2413FD6FAE90E3 /* Pods_Atomic_Habits_Running.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		712A8F06392F103253C0003D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B538EE5414505D6E776E420 /* Pods-Atomic Habits Running.debug.xcconfig */,
+				C78695FD0D6ACF6E5FBECF5F /* Pods-Atomic Habits Running.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EA575B3E226B0D5F00889814 = {
 			isa = PBXGroup;
 			children = (
@@ -46,6 +72,8 @@
 				EA575B51226B0D5F00889814 /* Atomic_Habits_Running.xcdatamodeld */,
 				EA575B56226B0D6100889814 /* LaunchScreen.storyboard */,
 				EA575B48226B0D5F00889814 /* Products */,
+				712A8F06392F103253C0003D /* Pods */,
+				6B0E70A85B39E1045D7DA5CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +109,9 @@
 			children = (
 				EA575B4A226B0D5F00889814 /* AppDelegate.swift */,
 				EA575B4C226B0D5F00889814 /* ViewController.swift */,
+				EA16529D22774219004AC75E /* SWRevealViewController.h */,
+				EA16529C22774219004AC75E /* SWRevealViewController.m */,
+				EA16529B22774218004AC75E /* Atomic Habits Running-Bridging-Header.h */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -106,6 +137,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA575B5C226B0D6100889814 /* Build configuration list for PBXNativeTarget "Atomic Habits Running" */;
 			buildPhases = (
+				E8F83A53E841FBEAB65DC801 /* [CP] Check Pods Manifest.lock */,
 				EA575B43226B0D5F00889814 /* Sources */,
 				EA575B44226B0D5F00889814 /* Frameworks */,
 				EA575B45226B0D5F00889814 /* Resources */,
@@ -131,6 +163,7 @@
 				TargetAttributes = {
 					EA575B46226B0D5F00889814 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -165,6 +198,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E8F83A53E841FBEAB65DC801 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Atomic Habits Running-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA575B43226B0D5F00889814 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -173,6 +231,7 @@
 				EA575B4D226B0D5F00889814 /* ViewController.swift in Sources */,
 				EA575B53226B0D5F00889814 /* Atomic_Habits_Running.xcdatamodeld in Sources */,
 				EA575B4B226B0D5F00889814 /* AppDelegate.swift in Sources */,
+				EA16529E22774219004AC75E /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,8 +375,10 @@
 		};
 		EA575B5D226B0D6100889814 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B538EE5414505D6E776E420 /* Pods-Atomic Habits Running.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Q2RC6BSWM;
 				INFOPLIST_FILE = "Atomic Habits Running/Info.plist";
@@ -327,6 +388,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.marekjustus.Atomic-Habits-Running";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Atomic Habits Running/Controller/Atomic Habits Running-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -334,8 +397,10 @@
 		};
 		EA575B5E226B0D6100889814 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C78695FD0D6ACF6E5FBECF5F /* Pods-Atomic Habits Running.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Q2RC6BSWM;
 				INFOPLIST_FILE = "Atomic Habits Running/Info.plist";
@@ -345,6 +410,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.marekjustus.Atomic-Habits-Running";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Atomic Habits Running/Controller/Atomic Habits Running-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
