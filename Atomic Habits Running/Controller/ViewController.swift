@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
     @IBOutlet weak var runningMainCard: UIButton!
@@ -18,9 +17,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        sideMenus()
-        customizeNavBar()
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "background-image.png")
+        backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
+        self.view.insertSubview(backgroundImage, at: 0)
         
+        sideMenus()
+
         runningMainCard.setImage(UIImage(named: "main-card.png"), for: UIControl.State.normal)
         
     }
@@ -58,16 +61,6 @@ class ViewController: UIViewController {
         
         
     }
-    
-    func customizeNavBar() {
-        
-        navigationController?.navigationBar.tintColor = UIColor.white
-        navigationController?.navigationBar.barTintColor = UIColor.darkGray
-        
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        
-    }
-    
-    
+
     
 }
