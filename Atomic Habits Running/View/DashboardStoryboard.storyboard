@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9vc-6Z-CIF">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dashboard-->
+        <scene sceneID="SaG-0J-4VP">
+            <objects>
+                <viewController id="54t-K5-9oZ" customClass="ViewController" customModule="Atomic_Habits_Running" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rO7-Da-y5f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQl-Tg-g2Q">
+                                <rect key="frame" x="32" y="273" width="350" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="runningButtonPressed:" destination="54t-K5-9oZ" eventType="touchUpInside" id="XBO-ch-slV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Kpa-qa-d5r"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dashboard" id="SSy-gS-fLb">
+                        <barButtonItem key="leftBarButtonItem" title="MenuButton" image="reveal-icon" id="MDP-Ci-xRP"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="MDP-Ci-xRP" id="g65-PH-xyz"/>
+                        <outlet property="runningMainCard" destination="wQl-Tg-g2Q" id="iHd-9W-xBL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C0w-6s-wIv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1190" y="250"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VRY-JU-pkL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9vc-6Z-CIF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="Icon-checked-small" id="HQW-Bd-3jQ"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TtX-s0-8G2">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="54t-K5-9oZ" kind="relationship" relationship="rootViewController" id="05O-mn-ttW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ThL-1N-UNf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2017" y="250"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon-checked-small" width="29" height="29"/>
+        <image name="reveal-icon" width="22" height="17"/>
+    </resources>
+</document>

@@ -21,26 +21,26 @@ class ViewController: UIViewController {
         sideMenus()
         customizeNavBar()
         
-    runningMainCard.setImage(UIImage(named: "main-card.png"), for: UIControl.State.normal)
+        runningMainCard.setImage(UIImage(named: "main-card.png"), for: UIControl.State.normal)
         
     }
-
+    
     @IBAction func runningButtonPressed(_ sender: UIButton) {
-     changeRunningHabitState(withName: "main-card.png", on: sender)
+        changeRunningHabitState(withName: "main-card.png", on: sender)
     }
-
-        func changeRunningHabitState(withName: String, on button: UIButton) {
-
-            if runningMainCard.currentImage == UIImage(named: "main-card.png") {
-
-        runningMainCard.setImage(UIImage(named: "main-card-done.png"), for: UIControl.State.normal)
-
-            } else {
-                
-                    runningMainCard.setImage(UIImage(named: "main-card.png"), for: UIControl.State.normal)
-                
-            }
+    
+    func changeRunningHabitState(withName: String, on button: UIButton) {
+        
+        if runningMainCard.currentImage == UIImage(named: "main-card.png") {
             
+            runningMainCard.setImage(UIImage(named: "main-card-done.png"), for: UIControl.State.normal)
+            
+        } else {
+            
+            runningMainCard.setImage(UIImage(named: "main-card.png"), for: UIControl.State.normal)
+            
+        }
+        
     }
     
     func sideMenus() {
@@ -58,11 +58,11 @@ class ViewController: UIViewController {
         
         
     }
-
+    
     func customizeNavBar() {
         
-        navigationController?.navigationBar.tintColor = UIColor(displayP3Red: 255/255, green: 256/255, blue: 256/255, alpha: 1)
-        navigationController?.navigationBar.barTintColor = UIColor(displayP3Red: 255/255, green: 87/255, blue: 35/255, alpha: 1)
+        navigationController?.navigationBar.tintColor = UIColor.white
+        navigationController?.navigationBar.barTintColor = UIColor.darkGray
         
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
@@ -71,4 +71,3 @@ class ViewController: UIViewController {
     
     
 }
-
