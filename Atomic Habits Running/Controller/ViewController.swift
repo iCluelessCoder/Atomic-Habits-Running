@@ -10,9 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var menuButton: UIBarButtonItem!
+    var score = 0
     
-    @IBOutlet weak var runningMainCard: UIButton!
+    @IBOutlet weak var menuButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,28 +24,8 @@ class ViewController: UIViewController {
         
         sideMenus()
 
-        runningMainCard.setImage(UIImage(named: "main-card.png"), for: UIControl.State.normal)
-        
     }
-    
-    @IBAction func runningButtonPressed(_ sender: UIButton) {
-        changeRunningHabitState(withName: "main-card.png", on: sender)
-    }
-    
-    func changeRunningHabitState(withName: String, on button: UIButton) {
-        
-        if runningMainCard.currentImage == UIImage(named: "main-card.png") {
-            
-            runningMainCard.setImage(UIImage(named: "main-card-done.png"), for: UIControl.State.normal)
-            
-        } else {
-            
-            runningMainCard.setImage(UIImage(named: "main-card.png"), for: UIControl.State.normal)
-            
-        }
-        
-    }
-    
+
     func sideMenus() {
         
         if revealViewController() != nil {
@@ -59,8 +39,6 @@ class ViewController: UIViewController {
             
         }
         
-        
     }
-
     
 }

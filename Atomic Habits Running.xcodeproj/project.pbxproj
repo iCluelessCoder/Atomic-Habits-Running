@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		EA575B53226B0D5F00889814 /* Atomic_Habits_Running.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA575B51226B0D5F00889814 /* Atomic_Habits_Running.xcdatamodeld */; };
 		EA575B55226B0D6100889814 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA575B54226B0D6100889814 /* Assets.xcassets */; };
 		EA575B58226B0D6100889814 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA575B56226B0D6100889814 /* LaunchScreen.storyboard */; };
+		EA9968A3228352C9007BE315 /* CompleteHabitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9968A2228352C9007BE315 /* CompleteHabitButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		EA575B52226B0D5F00889814 /* Atomic_Habits_Running.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Atomic_Habits_Running.xcdatamodel; sourceTree = "<group>"; };
 		EA575B54226B0D6100889814 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA575B57226B0D6100889814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA9968A2228352C9007BE315 /* CompleteHabitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteHabitButton.swift; sourceTree = "<group>"; };
 		EAB702972271E21B005561D2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Atomic Habits Running/Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				EA055B9A227C7D90008008E7 /* CustomNavController.swift */,
+				EA9968A2228352C9007BE315 /* CompleteHabitButton.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				EA575B43226B0D5F00889814 /* Sources */,
 				EA575B44226B0D5F00889814 /* Frameworks */,
 				EA575B45226B0D5F00889814 /* Resources */,
+				B9444F9142A70D668F11A99E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,7 +181,7 @@
 				};
 			};
 			buildConfigurationList = EA575B42226B0D5F00889814 /* Build configuration list for PBXProject "Atomic Habits Running" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -208,6 +212,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		B9444F9142A70D668F11A99E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Atomic Habits Running/Pods-Atomic Habits Running-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CalendarView/CalendarView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMoment/SwiftMoment.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CalendarView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMoment.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Atomic Habits Running/Pods-Atomic Habits Running-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E8F83A53E841FBEAB65DC801 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA055B9D227C9C75008008E7 /* CalendarViewController.swift in Sources */,
+				EA9968A3228352C9007BE315 /* CompleteHabitButton.swift in Sources */,
 				EA575B53226B0D5F00889814 /* Atomic_Habits_Running.xcdatamodeld in Sources */,
 				EA055B9F227C9C90008008E7 /* OverviewViewController.swift in Sources */,
 				EA575B4B226B0D5F00889814 /* AppDelegate.swift in Sources */,
