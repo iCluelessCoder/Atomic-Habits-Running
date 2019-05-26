@@ -76,7 +76,7 @@
             </objects>
             <point key="canvasLocation" x="-2213" y="-713"/>
         </scene>
-        <!--Calendar-->
+        <!--Guide-->
         <scene sceneID="Pzi-CK-D6Y">
             <objects>
                 <viewController id="z6h-Xd-g1b" customClass="CalendarViewController" customModule="Atomic_Habits_Running" customModuleProvider="target" sceneMemberID="viewController">
@@ -86,8 +86,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="iZy-yD-m26"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Calendar" id="gcQ-Qh-qmT">
-                        <barButtonItem key="leftBarButtonItem" image="reveal-icon" id="gQj-oI-lH6"/>
+                    <navigationItem key="navigationItem" title="Guide" id="gcQ-Qh-qmT">
+                        <barButtonItem key="leftBarButtonItem" image="reveal-icon" id="gQj-oI-lH6">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="calendarMenuButton" destination="gQj-oI-lH6" id="ngj-ZX-2h7"/>
@@ -105,32 +107,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Habit-Card-Background" translatesAutoresizingMaskIntoConstraints="NO" id="KDN-u2-YiC">
-                                <rect key="frame" x="31" y="271" width="353" height="354"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5m-j2-Pv7" customClass="CompleteHabitButton" customModule="Atomic_Habits_Running" customModuleProvider="target">
-                                <rect key="frame" x="132" y="373" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.5490196078431373" green="0.53333333333333333" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="Running-Shoe-with-background"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Daily Running" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAN-PZ-a5B">
-                                <rect key="frame" x="142" y="310" width="131" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days Selected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ArF-9m-jG9">
+                                <rect key="frame" x="100" y="741" width="214" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ArF-9m-jG9" secondAttribute="bottom" constant="30" id="9bx-gE-44P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ArF-9m-jG9" secondAttribute="trailing" constant="100" id="k7B-sT-aHX"/>
+                            <constraint firstItem="ArF-9m-jG9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="zFq-Ba-IRf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Dashboard" id="4JY-dq-iL7">
-                        <barButtonItem key="leftBarButtonItem" image="reveal-icon" id="rDM-Di-vKU"/>
+                        <barButtonItem key="leftBarButtonItem" image="reveal-icon" id="rDM-Di-vKU">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="rDM-Di-vKU" id="Kt5-Qq-cYV"/>
+                        <outlet property="streakUILabel" destination="ArF-9m-jG9" id="sbg-lF-O4b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -148,7 +147,9 @@
                         <viewLayoutGuide key="safeArea" id="bK8-KD-j0F"/>
                     </view>
                     <navigationItem key="navigationItem" title="Overview" id="r3m-ni-291">
-                        <barButtonItem key="leftBarButtonItem" image="reveal-icon" id="qEr-mI-fH5"/>
+                        <barButtonItem key="leftBarButtonItem" image="reveal-icon" id="qEr-mI-fH5">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="overviewMenuButton" destination="qEr-mI-fH5" id="FvP-Ya-zwQ"/>
@@ -177,11 +178,13 @@
             </objects>
             <point key="canvasLocation" x="-1742" y="-1555"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Dashboard-->
         <scene sceneID="4J2-FR-8Z6">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kue-Id-zYp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="Icon-checked-small" id="lfO-4L-XEH"/>
+                    <tabBarItem key="tabBarItem" title="Dashboard" image="Icon-calendar-small" id="lfO-4L-XEH">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lTS-96-SCh">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -203,11 +206,13 @@
             </objects>
             <point key="canvasLocation" x="-1248" y="106"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Overview-->
         <scene sceneID="GIL-Ec-k9q">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jps-f6-fZQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="Icon-chart-small" id="awV-le-BNs"/>
+                    <tabBarItem key="tabBarItem" title="Overview" image="Icon-chart-small" id="awV-le-BNs">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rRc-Ui-kmF">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -241,7 +246,7 @@
                     </tabBar>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
-                            <integer key="value" value="1"/>
+                            <integer key="value" value="0"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -254,11 +259,13 @@
             </objects>
             <point key="canvasLocation" x="-1248" y="-713"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Guide-->
         <scene sceneID="9cT-gC-0yM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dDr-jD-K3d" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="Icon-calendar-small" id="02u-Xh-UQA"/>
+                    <tabBarItem key="tabBarItem" title="Guide" image="opened-book-small" id="02u-Xh-UQA">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d2Q-NR-5wa">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -282,11 +289,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Habit-Card-Background" width="634" height="635"/>
         <image name="Icon-calendar-small" width="29" height="29"/>
         <image name="Icon-chart-small" width="29" height="29"/>
-        <image name="Icon-checked-small" width="29" height="29"/>
-        <image name="Running-Shoe-with-background" width="261" height="261"/>
+        <image name="opened-book-small" width="32" height="32"/>
         <image name="reveal-icon" width="22" height="17"/>
     </resources>
 </document>
