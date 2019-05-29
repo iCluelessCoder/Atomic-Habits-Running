@@ -61,7 +61,6 @@ class CalenderView: UIView, UICollectionViewDelegate, UICollectionViewDataSource
         super.init(frame: frame)
         
         initializeView()
-        
 
     }
     
@@ -76,6 +75,11 @@ class CalenderView: UIView, UICollectionViewDelegate, UICollectionViewDataSource
         
         initializeView()
 
+    }
+//    updates streak counter label
+    
+    func updateStreakCounter() {
+        viewControllerInterface.streakUILabel?.text = "\(daysSelected)"
     }
     
     func changeTheme() {
@@ -142,7 +146,8 @@ class CalenderView: UIView, UICollectionViewDelegate, UICollectionViewDataSource
         let lbl = cell?.subviews[1] as! UILabel
         lbl.textColor=UIColor.white
         daysSelected += 1
-//        viewControllerInterface.setStreakCount()
+        updateStreakCounter()
+//        print("button is pressed works")
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
@@ -151,7 +156,8 @@ class CalenderView: UIView, UICollectionViewDelegate, UICollectionViewDataSource
         let lbl = cell?.subviews[1] as! UILabel
         lbl.textColor = Style.activeCellLblColor
         daysSelected -= 1
-//        viewControllerInterface.setStreakCount()
+        updateStreakCounter()
+//        print("button is de-pressed works")
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -171,7 +177,9 @@ class CalenderView: UIView, UICollectionViewDelegate, UICollectionViewDataSource
     func getFirstWeekDay() -> Int {
         let day = ("\(currentYear)-\(currentMonthIndex)-01".date?.firstDayOfTheMonth.weekday)!
 //        return day == 7 ? 1 : day
-        return day
+//        * the below fixes bug where first weekday line was not showing if the 1st of the month was Sunday
+        return day == 1 ? 8 : day
+//        return day
     }
     
     func didChangeMonth(monthIndex: Int, year: Int) {
